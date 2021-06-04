@@ -1,3 +1,71 @@
 .intro{
-    background-color: lightpink;
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 0.4;
+        overflow: hidden;
+        align-items: center;
+
+        .imgContainer{
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: left;
+            position: absolute;
+            top: 10%;
+            bottom: 25%;
+            
+            img{
+                height: 105%;
+            }
+        }
+
+    
+    }
+
+    .right{
+        flex: 0.6;
+        position: relative;
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 95px;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 70px;
+            }
+            h3{
+                font-size: 50px;
+            }
+        }
+
+        a{
+
+            .arrow{
+                position: absolute;
+                bottom: 10px;
+                left: 20%;
+                width: 150px;
+                height: 150px;
+                animation: arrowBlink 4s infinite;
+                color: black;
+            }
+        }
+
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0;
+            }
+        }
+    }
 }
